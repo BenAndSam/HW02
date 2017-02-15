@@ -21,6 +21,7 @@ source_name("") {}
  */
 Phone_Directory::~Phone_Directory()
 {
+	int i = 0;
 	delete[] the_directory;
 }
 
