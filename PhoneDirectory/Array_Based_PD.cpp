@@ -164,7 +164,7 @@ void Phone_Directory::add(const string& name,
 /** Remove an entry from the array the_directory and decrements the size by one.
 	@param index of the name to be removed
 	*/
-void Phone_Directory::remove_entry(int index)
+void Phone_Directory::remove_entry(int index) //COMPLETED BY SAM HOLZER
 {
 	for (int i = index; i < size - 1; i++)
 	{
