@@ -87,7 +87,6 @@ void do_lookup_entry(Phone_Directory& the_directory)
 
 void do_remove_entry(Phone_Directory& the_directory) // COMPLETED BY BEN MORLEDGE-HAMPTON
 {
-	
 	// Get the user's name.
 	string name;
 	cout << "Enter name: ";
