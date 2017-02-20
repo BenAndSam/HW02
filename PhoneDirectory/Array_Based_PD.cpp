@@ -123,12 +123,7 @@ string Phone_Directory::remove_entry(const string& name) // COMPLETED BY SAM HOL
 	//Entry to be removed, and decrement the size by one
 	if (index >= 0) {
 		string name = the_directory[index].get_name();
-
-		for (int i = index; i < size - 1; i++)
-		{
-			the_directory[i] = the_directory[i + 1];
-		}
-		size--;
+		remove_entry(index);
 		return name;
 	}
 	//If the name is not found in the array, returns an empty string
@@ -164,6 +159,18 @@ void Phone_Directory::add(const string& name,
 	// Increment size and add new entry.
 	the_directory[size] = Directory_Entry(name, number);
 	size++;
+}
+
+/** Remove an entry from the array the_directory and decrements the size by one.
+	@param index of the name to be removed
+	*/
+void Phone_Directory::remove_entry(int index)
+{
+	for (int i = index; i < size - 1; i++)
+	{
+		the_directory[i] = the_directory[i + 1];
+	}
+	size--;
 }
 
 /** Create a new array of directory entries with twice the capacity
