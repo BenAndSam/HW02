@@ -1,6 +1,7 @@
 #ifndef ARRAY_BASED_PD_H_
 #define ARRAY_BASED_PD_H_
 #include <string>
+using namespace std;
 
 /** Specification file for the array-based phone directory.
  */
