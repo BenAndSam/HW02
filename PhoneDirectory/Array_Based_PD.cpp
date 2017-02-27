@@ -3,6 +3,16 @@
 	@author Koffman and Wolfgang
 */
 
+/****************
+
+* Name:  Sam Holzer and Ben Morledge-Hampton
+
+* Project:  Phone Directory
+
+* Date last updated: 2/20/17
+
+*****************/
+
 #include "Array_Based_PD.h"
 #include <string>
 #include <fstream>
